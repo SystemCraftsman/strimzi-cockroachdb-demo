@@ -1,0 +1,1 @@
+# strimzi-cli-cockroachdb-demo
