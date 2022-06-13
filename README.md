@@ -282,8 +282,8 @@ Notice that the `after` field becomes `null` when the change data is a `delete` 
 
 ## Conclusion
 
-Congratulations! You've successfully captured the bank account transaction changes, and made it consumable as change events via Strimzi.
+Congratulations! You've successfully captured the bank account transaction changes, and made them consumable as change events via Strimzi.
 
-In this tutorial, you have learned how to run a Kafka cluster on OpenShift by using Strimzi, how to create a topic by using the Strimzi CLI.
+In this tutorial, you have learned how to run a Kafka cluster on OpenShift by using Strimzi, and how to create a topic by using the Strimzi CLI.
 Also, you have learned to install CockroachDB on OpenShift, create a table by using its SQL query interface, and configure it for using CDC.
 You've created change events on a CockroachDB table and consumed those events from the Strimzi Kafka topic by using the Strimzi CLI.
