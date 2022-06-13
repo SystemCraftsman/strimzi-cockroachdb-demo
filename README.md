@@ -20,7 +20,7 @@ Currently, they have a mechanism for indexing the bank account transaction chang
 They want you to create a core mechanism that avoids any data inconsistency issue between systems.
 They require you to create a basic implementation of a CDC by using CockroachDB's `Changefeed` mechanism and because they use CockroachDB on OpenShift, they would like you to use Strimzi.
 
-You do not need to implement the Elasticsearch part, but only the CDC part.
+You must only implement the CDC part, so do not need to implement the Elasticsearch part.
 To simulate the CockroachBank system, you must install the AMQ Streams and CockroachDB operators on your OpenShift cluster and create their instances.
 
 The following image is the architectural diagram of the system they require you to implement:
