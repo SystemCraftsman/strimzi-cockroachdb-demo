@@ -266,7 +266,7 @@ As the last step, delete the bank account to see how CockroachDB CDC captures th
 Run the following SQL query in the query console of CockroachDB:
 
 ```sql
-root@:26257/bank> DELETE FROM bank.account where id <> 0;
+root@:26257/bank> DELETE FROM account where id <> 0;
 ```
 
 The Strimzi CLI consumer should print the following captured events:
