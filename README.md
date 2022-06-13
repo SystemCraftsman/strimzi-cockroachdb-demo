@@ -287,5 +287,3 @@ Congratulations! You've successfully captured the bank account transaction chang
 In this tutorial, you have learned how to run a Kafka cluster on OpenShift by using Strimzi, how to create a topic by using the Strimzi CLI.
 Also, you have learned to install CockroachDB on OpenShift, create a table by using its SQL query interface, and configure it for using CDC.
 You've created change events on a CockroachDB table and consumed those events from the Strimzi Kafka topic by using the Strimzi CLI.
-
-You can find the resources for this tutorial in [this repository](https://github.com/systemcraftsman/strimzi-cockroachdb-demo).
