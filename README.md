@@ -53,7 +53,7 @@ kfk clusters --create \
 ---
 **NOTE**
 
-[Download the Strimzi CLI Cheat Sheet from here](https://www.systemcraftsman.com/strimzi-cli-cheat-sheet/) if you are interested in more.
+[Download the Strimzi CLI Cheat Sheet from here](https://www.systemcraftsman.com/strimzi-cli-cheat-sheet/) if you are interested.
 
 ---
 
