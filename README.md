@@ -26,7 +26,8 @@ To simulate the CockroachBank system, you must install the AMQ Streams and Cockr
 
 The following image is the architectural diagram of the system they require you to implement:
 
-![Required Architecture](./images/arch.png)
+![Required Architecture](https://user-images.githubusercontent.com/10568159/173261799-ba623472-10b2-4fcc-8e90-7d1fa55feb71.png)
+
 
 ## Creating a Strimzi Cluster
 
