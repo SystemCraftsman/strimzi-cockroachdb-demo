@@ -6,8 +6,7 @@ You’ll need the following for this tutorial:
 
 * [oc CLI](https://docs.openshift.com/container-platform/4.7/cli_reference/openshift_cli/getting-started-cli.html).
 * [Strimzi CLI](https://github.com/systemcraftsman/strimzi-kafka-cli#installation).
-* A [30-days trial license](https://www.cockroachlabs.com/get-cockroachdb/enterprise/) for CockroachDB.
-This is required to use CockroachDB's CDC feature.
+* A [30-days trial license](https://www.cockroachlabs.com/get-cockroachdb/enterprise/) for CockroachDB, which is required to use CockroachDB's CDC feature.
 * You must have Strimzi 0.26.1 or AMQ Streams 2.1.0 operator installed on your OpenShift/Kubernetes cluster.
 * You must have CockroachDB 2.3.0 operator installed on your OpenShift/Kubernetes cluster.
 
