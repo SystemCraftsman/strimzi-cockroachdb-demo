@@ -1,0 +1,18 @@
+kind: CrdbCluster
+apiVersion: crdb.cockroachlabs.com/v1alpha1
+metadata:
+  name: crdb-tls-example
+  namespace: cockroachbank
+spec:
+  cockroachDBVersion: v21.1.10
+  dataStore:
+    pvc:
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 10Gi
+        volumeMode: Filesystem
+  nodes: 3
+  tlsEnabled: false
