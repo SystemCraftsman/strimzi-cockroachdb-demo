@@ -53,7 +53,7 @@ kfk clusters --create \
 ---
 **NOTE**
 
-[Download the Strimzi CLI Cheat Sheet from here](https://www.systemcraftsman.com/strimzi-cli-cheat-sheet/) if you are interested more.
+[Download the Strimzi CLI Cheat Sheet from here](https://www.systemcraftsman.com/strimzi-cli-cheat-sheet/) if you are interested in more.
 
 ---
 
@@ -76,7 +76,7 @@ my-cluster-zookeeper-0                        1/1     Running   ...
 
 ## Running CockroachDB on OpenShift
 
-To install CockroachDB on your OpenShift cluster, [download the CockroachDB cluster custom resource](), which the CockroachDB operator creates the cluster for you by using the resource definition you provide in the YAML.
+To install CockroachDB on your OpenShift cluster, [download the CockroachDB cluster custom resource](https://raw.githubusercontent.com/systemcraftsman/strimzi-cockroachdb-demo/main/resources/crdb-cluster.yaml?token=GHSAT0AAAAAABM2AIEVUBWSZFA2QWKHQ7XOYVGRUCQ), which the CockroachDB operator creates the cluster for you by using the resource definition you provide in the YAML.
 
 ```shell
 oc create -f crdb-cluster.yaml -n cockroachbank
