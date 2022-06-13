@@ -161,13 +161,13 @@ root@:26257/bank> CREATE TABLE account (id INT PRIMARY KEY, balance INT);
 ```
 
 Create a `Changefeed` for the table `account`.
-Set the xxxx broker address for the Changefeed, to specify the broker to send the captured change data:
+Set the Strimzi Kafka cluster broker address for the Changefeed, to specify the broker to send the captured change data:
 
 ```sql
 root@:26257/bank> CREATE CHANGEFEED FOR TABLE account INTO 'kafka://my-cluster-kafka-bootstrap:9092' WITH UPDATED;
 ```
 
-Notice that you use `my-cluster-kafka-bootstrap:9092` for the Kafka bootstrap address.
+Notice that the Kafka bootstrap address is `my-cluster-kafka-bootstrap:9092`.
 This is the service URL that Strimzi provides for the Kafka cluster `my-cluster` you have created.
 
 ---
