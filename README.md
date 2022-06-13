@@ -15,7 +15,7 @@ This is required to use CockroachDB's CDC feature.
 
 Suppose that you are a consultant who works with a customer, CockroachBank LLC.
 
-They use CockroachDB on OpenShift and most of the daily bank account transactions are kept in this database.
+They use CockroachDB on OpenShift and their daily bank account transactions are kept in CockroachDB.
 Currently, they have a mechanism for indexing the bank account transaction changes in Elasticsearch but they noticed that it creates data inconsistencies between the actual data and the indexed log data that is in Elasticsearch.
 
 They want you to create a core mechanism that avoids any data inconsistency issue between systems.
