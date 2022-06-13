@@ -1,29 +1,5 @@
 # Change Data Capture with CockroachDB and Strimzi
 
-Change Data Capture (CDC) is a data integration pattern that enables capturing row-level changes into a configurable sink for downstream processing such as reporting, caching, full-text indexing, or most importantly helping with *avoiding dual writes*.
-
-Many technologies implement CDC as either a part of their product's solution or the main functionality of an open-source project like [Debezium](https://debezium.io/).
-
-CockroachDB is one of those technologies that [implement CDC](https://www.cockroachlabs.com/docs/stable/change-data-capture-overview.html) as a part of their product features.
-
-CockroachDB is a distributed database that supports standard SQL.
-It is designed to survive software and hardware failures, from server restarts to data center outages.
-
-While CockroachDB is designed to be `excellent`, it needs to coexist with other systems like full-text search engines, analytics engines or data pipeline systems.
-Because of that, it has [Changefeeds](https://www.cockroachlabs.com/docs/v21.2/create-changefeed), which enable data sinks like AWS S3, webhooks and most importantly Apache Kafka or Strimzi: a Kafka on Kubernetes solution.
-
-Strimzi is a [CNCF](https://www.cncf.io/) sandbox project, which provides an easy way to run and manage an Apache Kafka cluster on Kubernetes or OpenShift.
-Strimzi is a [Kubernetes Operator](https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator#:~:text=A%20Kubernetes%20operator%20is%20an,behalf%20of%20a%20Kubernetes%20user.), and it provides an easy and flexible configuration of a Kafka cluster, empowered by the capabilities of Kubernetes/OpenShift.
-
-In this tutorial, you will:
-
-* Run a Kafka cluster on OpenShift/Kubernetes.
-* Create a topic within Strimzi by using its the Strimzi CLI.
-* Create a CockroachDB cluster on OpenShift and use its SQL client.
-* Create a table on CockroachDB and configure it for using CDC.
-* Create, update, delete records in the CockroachDB table.
-* Consume the change events from the relevant Strimzi topic by using the Strimzi CLI.
-
 ## Prerequisites
 
 You’ll need the following for this tutorial:
